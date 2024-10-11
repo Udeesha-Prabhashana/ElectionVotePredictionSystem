@@ -34,8 +34,9 @@ const SidebarDoctor: React.FC = () => {
     return (
         <div className="SidebarDoc">
             <div className="topDoc">
-                <Link to="/doctor/home" style={{ textDecoration: "none" }} onClick={() => handleLinkClick("/doctor/home")}>
-                    {/* <img src={logo} alt="CareFlow Logo" className="logoImageDoc" /> */}
+                <Link to="/" style={{ textDecoration: "none" }} onClick={() => handleLinkClick("/")}>
+                <div className="logoImageDoc"> ClearVote</div>
+
                 </Link>
             </div>
             <hr />
@@ -49,7 +50,7 @@ const SidebarDoctor: React.FC = () => {
                         <Person2OutlinedIcon className="iconDoc" />
                         <span>Election Manifesto</span>
                     </li>
-                    <li className={activeLink === "/doctor/patients" ? "activeDoc" : ""} onClick={() => handleLinkClick("/doctor/patients")}>
+                    <li>
                         <AccountBoxIcon className="iconDoc" />
                         <span>Election Results</span>
                     </li>
@@ -61,16 +62,16 @@ const SidebarDoctor: React.FC = () => {
             </div>
             <div className="bottomContainerDoc">
                 <ul>
-                    <li className={activeLink === "/doctor/notifications" ? "activeDoc" : ""} onClick={() => handleLinkClick("/doctor/notifications")}>
+                    <li>
                         <NotificationsNoneIcon className="iconDoc" />
                         <span>Notifications</span>
                         <span className="notificationBadge">2</span>
                     </li>
-                    <li className={activeLink === "/doctor/settings" ? "activeDoc" : ""} onClick={() => handleLinkClick("/doctor/settings")}>
+                    <li >
                         <SettingsApplicationsIcon className="iconDoc" />
                         <span>Settings</span>
                     </li>
-                    <li onClick={() => handleLinkClick("/login")}>
+                    <li>
                         <ExitToAppIcon className="iconDoc" />
                         <span>Logout</span>
                     </li>
