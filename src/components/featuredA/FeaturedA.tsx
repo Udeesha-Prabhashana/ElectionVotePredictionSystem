@@ -43,7 +43,7 @@ const Featured: React.FC = () => {
           </ResponsiveContainer>
         </div>
         <p className="title"></p>
-        <p className="amount">1,200 votes</p> {/* Total number of votes */}
+        <p className="amount">247,93,400 votes</p> {/* Total number of votes */}
         <p className="desc">This chart shows the distribution of votes among candidates.</p>
       </div>
     </div>
