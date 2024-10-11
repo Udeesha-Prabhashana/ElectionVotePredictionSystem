@@ -14,11 +14,11 @@ interface ChartProps {
 
 // Sample data representing the election details for each candidate
 const data: DataPoint[] = [
-  { name: "Candidate A", votes: 2500 },
-  { name: "Candidate B", votes: 1800 },
-  { name: "Candidate C", votes: 2200 },
-  { name: "Candidate D", votes: 1300 },
-  { name: "Candidate E", votes: 900 },
+  { name: "Anura Dissana", votes: 2500 },
+  { name: "Ranil wikra", votes: 1800 },
+  { name: "Sajith Premada", votes: 2200 },
+  { name: "Namal Rajapa", votes: 1300 },
+  { name: "Dilith jayawe", votes: 900 },
 ];
 
 const ElectionBarChart: React.FC<ChartProps> = ({ title, aspect }) => {
