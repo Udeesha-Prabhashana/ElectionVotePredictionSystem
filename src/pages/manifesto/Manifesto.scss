@@ -1,0 +1,96 @@
+.manifesto-container {
+  background-color: white;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 20px;
+}
+
+.topics-section h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  margin-left: 350px;
+}
+
+.candidates-container {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 500px;
+}
+
+.candidate-card {
+  color: gray;
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  border-radius: 10px;
+  padding: 20px;
+  width: 180px;
+  text-align: center;
+}
+
+.candidate-header {
+  margin-bottom: 15px;
+}
+
+.candidate-image {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.progress-circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.percentage-label {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+.data-section {
+  color: gray;
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 300px;
+}
+
+.data-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%; // Occupy full width of the parent container
+  padding: 10px 0;
+
+  .title {
+    width: 150px; // Fixed width for the title column
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .data-cell {
+    width: 100px; // Fixed width for candidate values
+    display: flex; // Flexbox for centering
+    align-items: center; // Vertical center
+    justify-content: center; // Horizontal center
+    border-left: 1px solid #ccc; // Optional, add border to simulate table columns
+    padding: 0 10px;
+    text-align: center; // Ensure text is centered horizontally
+  }
+}

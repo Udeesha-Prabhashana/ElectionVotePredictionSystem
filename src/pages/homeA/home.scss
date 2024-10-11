@@ -1,0 +1,34 @@
+.homeA{
+    display: flex;    //home class is sidebar 
+
+    .homeContainerA{ //homeContainer class is navbar 
+
+        flex: 6;     //used to divide both sidebar and navbar 
+        margin-left: 320px;
+    }
+
+    .widgetsA , .chartsA{
+        display: flex;    //use to get horizontal given datas
+        padding: 20px;
+        gap: 40px;   //get the space
+        margin-top: 60px;
+            z-index: 1; //used to get the top of the page
+    }
+
+    .chartsA{
+        padding: 5px 20px;        
+    }
+
+    .listContainerA{
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);    //use to get some box to write some contient in side the box
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        padding: 20px;
+        margin: 20px;
+
+        .listTitleA{
+            font-weight: 500;
+            color: gray;
+            margin-bottom: 15px;
+        }
+    }
+}
