@@ -5,10 +5,10 @@ import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
 
 // Sample data representing the votes for each candidate
 const data = [
-  { name: "Anura Dissanayake", votes: 80, color: "#8884d8" },
-  { name: "Sajith Premadasa", votes: 20, color: "#82ca9d" },
-  { name: "Ranil Wickremesinghe", votes: 26, color: "#ffc658" },
-  { name: "Namal Rajapakse", votes: 25, color: "#FF8042" }
+  { name: "Anura Dissanayake", votes: 6474923, color: "#8884d8" },
+  { name: "Sajith Premadasa", votes: 3279627, color: "#82ca9d" },
+  { name: "Ranil Wickremesinghe", votes: 3499314, color: "#ffc658" },
+  { name: "Namal Rajapakse", votes: 1238899, color: "#FF8042" }
 ];
 
 // Calculate total votes
@@ -18,7 +18,7 @@ const Featured: React.FC = () => {
   return (
     <div className="featured2">
       <div className="top">
-        <h1 className="title">Election Votes Distribution</h1>
+        <h1 className="title">Election Votes Distribution Prediction</h1>
         <MoreVertIcon fontSize="small" />
       </div>
       <div className="bottom">
