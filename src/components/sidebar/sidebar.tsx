@@ -31,6 +31,10 @@ const SidebarDoctor: React.FC = () => {
         }
     };
 
+    const navigatToExternal = (link: string) => {
+        window.open(link, "_blank");
+    };
+
     return (
         <div className="SidebarDoc">
             <div className="topDoc">
@@ -50,9 +54,9 @@ const SidebarDoctor: React.FC = () => {
                         <Person2OutlinedIcon className="iconDoc" />
                         <span>Election Manifesto</span>
                     </li>
-                    <li>
+                    <li className={activeLink === "/" ? "activeDoc" : ""} onClick={() => navigatToExternal("http://localhost:3000")}>
                         <AccountBoxIcon className="iconDoc" />
-                        <span>Election Results</span>
+                        <span>Chat</span>
                     </li>
                     {/* <li className={activeLink === "/doctor/revenue_records" ? "activeDoc" : ""} onClick={() => handleLinkClick("/doctor/revenue_records")}>
                         <InsertChartIcon className="iconDoc" />
